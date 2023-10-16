@@ -53,73 +53,56 @@
 
         <!-- SIDE BAR -->
 
-        <div class="row flex-nowrap">
-          <div id="left-bar-menu" class="cian-bg col-auto col-md-3 col-xl-2 px-sm-3 px-0 pt-2">
-              <div class="d-flex flex-column align-items-center align-items-sm-start pt-2 h-100">
-                  <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-decoration-none">
-                      <span class="fs-5 d-none d-sm-inline">Menu</span>
-                  </a>
+        <div class="row h-100 flex-nowrap">
+          <div id="left-bar-menu" class="cian-bg col-auto col-md-3 col-xl-2 px-sm-3 px-0 pt-2 d-flex flex-column justify-content-between">
+              <div class="d-flex flex-column align-items-center align-items-sm-start pt-2">
                   <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                       <li class="nav-item">
                           <a href="#" class="nav-link align-middle px-0">
-                              <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                            <svg class="inbox" width="24" height="24" viewBox="0 0 24 24">
+                              <g fill="currentColor" fill-rule="nonzero">
+                                <path d="M10 14.5a2 2 0 104 0h5.5V18a1.5 1.5 0 01-1.5 1.5H6A1.5 1.5 0 014.5 18v-3.5H10z" opacity="0.1"></path>
+                                <path d="M8.062 4h7.876a2 2 0 011.94 1.515l2.062 8.246a2 2 0 01.06.485V18a2 2 0 01-2 2H6a2 2 0 01-2-2v-3.754a2 2 0 01.06-.485l2.06-8.246A2 2 0 018.061 4zm0 1a1 1 0 00-.97.757L5.03 14.004a1 1 0 00-.03.242V18a1 1 0 001 1h12a1 1 0 001-1v-3.754a1 1 0 00-.03-.242l-2.06-8.247A1 1 0 0015.94 5H8.061zM12 17.25A2.75 2.75 0 019.295 15H7a.5.5 0 110-1h2.75a.5.5 0 01.5.5 1.75 1.75 0 003.5 0 .5.5 0 01.5-.5H17a.5.5 0 110 1h-2.295A2.75 2.75 0 0112 17.25z"></path>
+                              </g>
+                            </svg>
+                            <span class="ms-1 d-none text-dark d-sm-inline">Home</span>
                           </a>
                       </li>
                       <li>
-                          <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                              <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
-                          <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-                              <li class="w-100">
-                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1 </a>
-                              </li>
-                              <li>
-                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2 </a>
-                              </li>
-                          </ul>
-                      </li>
-                      <li>
-                          <a href="#" class="nav-link px-0 align-middle">
-                              <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Orders</span></a>
+                          <a href=""  class="nav-link px-0 align-middle">
+                            <svg class="day" width="24" height="24" viewBox="0 0 24 24">
+                              <g fill="currentColor" fill-rule="evenodd">
+                                <path fill-rule="nonzero" d="M6 4.5h12A1.5 1.5 0 0 1 19.5 6v2.5h-15V6A1.5 1.5 0 0 1 6 4.5z" opacity=".1"></path>
+                                <path fill-rule="nonzero" d="M6 4h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H6zm1 3h10a.5.5 0 1 1 0 1H7a.5.5 0 0 1 0-1z"></path>
+                                <text font-family="-apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" font-size="9" transform="translate(4 2)" font-weight="500">
+                                <tspan x="8" y="15" text-anchor="middle" id="todayDate">15</tspan>
+                                </text>
+                              </g>
+                            </svg> <span class="ms-1 d-none text-dark d-sm-inline">Today</span> 
+                          </a>
                       </li>
                       <li>
                           <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                              <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Bootstrap</span></a>
+                            <span class="mr-1"><svg class="project" width="24" height="24" viewBox="0 0 24 24">
+                              <g fill="currentColor" fill-rule="nonzero">
+                                <path d="M6 4.5h12A1.5 1.5 0 0119.5 6v2.5h-15V6A1.5 1.5 0 016 4.5z" opacity="0.1"></path>
+                                <path d="M6 4h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2zm0 1a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V6a1 1 0 00-1-1H6zm10 12a1 1 0 110-2 1 1 0 010 2zm-4 0a1 1 0 110-2 1 1 0 010 2zm-4 0a1 1 0 110-2 1 1 0 010 2zm8-4a1 1 0 110-2 1 1 0 010 2zm-4 0a1 1 0 110-2 1 1 0 010 2zm-4 0a1 1 0 110-2 1 1 0 010 2zM7 8h10a.5.5 0 110 1H7a.5.5 0 010-1z"></path>
+                              </g>
+                            </svg>
+                          </span> <span class="ms-1 d-none text-dark d-sm-inline">Projects</span></a>
                           <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                               <li class="w-100">
-                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1</a>
+                                  <a href="#" class="nav-link text-dark px-0"> <span class="d-none d-sm-inline">Project </span> 1</a>
                               </li>
                               <li>
-                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2</a>
+                                  <a href="#" class="nav-link text-dark px-0"> <span class="d-none d-sm-inline">Project </span> 2</a>
                               </li>
                           </ul>
                       </li>
-                      <li>
-                          <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                              <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
-                              <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                              <li class="w-100">
-                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 1</a>
-                              </li>
-                              <li>
-                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>
-                              </li>
-                              <li>
-                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 3</a>
-                              </li>
-                              <li>
-                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 4</a>
-                              </li>
-                          </ul>
-                      </li>
-                      <li>
-                          <a href="#" class="nav-link px-0 align-middle">
-                              <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
-                      </li>
-                  </ul>
-                  <hr />
-                  <div class="pb-4">
-                    <p class="copyright">© Paolo Cantoreggi</p>
-                  </div>
+              </div>
+              <div class="pb-4">
+                <hr />
+                <p class="copyright">© Paolo Cantoreggi</p>
               </div>
           </div>
           <div class="col py-3 white-bg rounded-2">
